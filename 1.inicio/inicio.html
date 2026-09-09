@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARTNOVUS | Agencia Multimedia</title>
+  
+  <!-- Fuentes e iconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Montserrat:wght@300;400;600;700&display=swap">
+
+  <!-- Hoja de Estilos CSS Externa -->
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- Favicon (Punto del requisito) -->
+  <link rel="icon" type="image/png" href="ImagenesInicio/logo.png">
+</head>
+<body>
+
+  <!-- HEADER GLOBAL -->
+  <header class="main-header">
+    <div class="header-container">
+      
+      <!-- LOGO + NOMBRE DE LA EMPRESA + SLOGAN -->
+      <div class="brand-container">
+        <a href="index.html" class="logo-link">
+          <img src="ImagenesInicio/logo.png" alt="Logo ARTNOVUS" class="brand-logo">
+        </a>
+        <div class="brand-text">
+          <span class="brand-name">ARTNOVUS</span>
+          <span class="brand-tagline">Agencia Multimedia</span>
+        </div>
+      </div>
+
+      <!-- MENÚ DE NAVEGACIÓN --> 
+      <nav>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="index.html" class="nav-link active">INICIO</a></li>
+          <li><a href="../3.nosotros/nosotros.html" class="nav-link">NOSOTROS</a></li>
+          <li><a href="../2.servicios/servicios.html" class="nav-link">SERVICIOS</a></li>
+          <li><a href="../4.contacto/contacto.html" class="nav-link">CONTACTANOS</a></li>
+        </ul>
+      </nav>
+
+      <!-- ACCIONES ENCABEZADO (INICIAR SESIÓN Y HABLEMOS) -->
+      <div class="header-actions">
+        <!-- Disparador del Modal de Login -->
+        <button type="button" class="action-btn" id="open-login-btn">
+          <i class="fa-solid fa-user-gear"></i>
+          <span>INICIAR SESIÓN</span>
+        </button>
+        <a href="https://wa.me/573126668958" target="_blank" rel="noopener noreferrer" class="action-btn btn-whatsapp">
+          <i class="fa-brands fa-whatsapp"></i>
+          <span>HABLEMOS</span>
+        </a>
+      </div>
+
+      <button class="menu-toggle" id="menu-toggle">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+      <div class="hero-content">
+        <h1>CREAMOS<br>CONECTAMOS<br>TRANSFORMAMOS</h1>
+        <p>Potenciamos marcas a través de estrategias creativas, contenido impactante y experiencias digitales que generan resultados reales.</p>
+      </div>
+    </section>
+
+    <!-- SECCIÓN NUESTROS SERVICIOS -->
+    <section class="services-section">
+      <h2 class="section-title">NUESTROS SERVICIOS</h2>
+
+      <div class="services-layout">
+        <!-- Flecha curva decorativa -->
+        <div class="curved-arrow">
+          <svg viewBox="0 0 200 100" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M 10 20 Q 20 90 150 80" />
+            <path d="M 130 65 L 155 80 L 135 95" />
+          </svg>
+        </div>
+
+        <!-- Fila de 4 servicios con iconos en círculo (con efecto hover) -->
+        <div class="services-row">
+          <div class="service-item">
+            <div class="icon-circle"><i class="fa-solid fa-pen-nib"></i></div>
+            <h3>BRANDING:</h3>
+            <p>Construimos marcas sólidas, auténticas y memorables que conectan.</p>
+          </div>
+
+          <div class="service-item">
+            <div class="icon-circle"><i class="fa-solid fa-code"></i></div>
+            <h3>DESARROLLO WEB:</h3>
+            <p>Sitios web modernos, funcionales y optimizados para destacar en línea.</p>
+          </div>
+
+          <div class="service-item">
+            <div class="icon-circle"><i class="fa-solid fa-circle-play"></i></div>
+            <h3>DISEÑO PARA REDES:</h3>
+            <p>Contenido visual atractivo y estratégico para tus redes sociales.</p>
+          </div>
+
+          <div class="service-item">
+            <div class="icon-circle"><i class="fa-solid fa-chart-simple"></i></div>
+            <h3>MARKETING DIGITAL:</h3>
+            <p>Estrategias digitales creativas que impulsan tu marca y generan resultados.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- PORTAFOLIO CON 4 FOTOS Y EFECTO VISUAL HOVER -->
+      <div class="portfolio-grid">
+        <div class="portfolio-card">
+          <h4>DESARROLLO WEB</h4>
+          <div class="card-img-wrapper">
+            <img src="ImagenesInicio/ima01.avif" alt="Desarrollo Web" class="foto-hover">
+          </div>
+        </div>
+
+        <div class="portfolio-card">
+          <h4>BRANDING</h4>
+          <div class="card-img-wrapper">
+            <img src="ImagenesInicio/ima02.avif" alt="Branding" class="foto-hover">
+          </div>
+        </div>
+
+        <div class="portfolio-card">
+          <h4>DISEÑO PARA REDES</h4>
+          <div class="card-img-wrapper">
+            <img src="ImagenesInicio/ima03.avif" alt="Diseño para redes" class="foto-hover">
+          </div>
+        </div>
+
+        <div class="portfolio-card">
+          <h4>MARKETING DIGITAL</h4>
+          <div class="card-img-wrapper">
+            <img src="ImagenesInicio/ima04.avif" alt="Marketing Digital" class="foto-hover">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- MODAL DE INICIO DE SESIÓN -->
+  <div class="login-modal-overlay" id="login-modal">
+    <div class="login-modal-container">
+      <button type="button" class="close-modal-btn" id="close-login-btn">&times;</button>
+      
+      <div class="login-header">
+        <img src="ImagenesInicio/logo.png" alt="Logo ARTNOVUS" class="login-logo">
+        <h3>BIENVENIDO A ARTNOVUS</h3>
+        <p>Ingresa tus credenciales para acceder a tu cuenta</p>
+      </div>
+
+      <form class="login-form" id="login-form">
+        <div class="input-group">
+          <label for="login-email">Correo Electrónico</label>
+          <div class="input-wrapper">
+            <i class="fa-solid fa-envelope"></i>
+            <input type="email" id="login-email" placeholder="ejemplo@artnovus.com" required>
+          </div>
+        </div>
+
+        <div class="input-group">
+          <label for="login-password">Contraseña</label>
+          <div class="input-wrapper">
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" id="login-password" placeholder="••••••••" required>
+            <i class="fa-solid fa-eye toggle-password" id="toggle-password"></i>
+          </div>
+        </div>
+
+        <div class="form-options">
+          <label class="remember-me">
+            <input type="checkbox"> Recordarme
+          </label>
+          <a href="#" class="forgot-pass">¿Olvidaste tu contraseña?</a>
+        </div>
+
+        <button type="submit" class="submit-login-btn">INGRESAR</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- FOOTER GLOBAL EXIGIDO EN REQUISITOS -->
+  <footer class="main-footer">
+    <div class="footer-content">
+      <div class="footer-info">
+        <i class="fa-solid fa-phone"></i>
+        <span>+57 3126668958</span>
+      </div>
+      <div class="footer-info">
+        <i class="fa-solid fa-envelope"></i>
+        <span>helloARTNOVUS@gmail.com</span>
+      </div>
+      <div class="footer-info">
+        <i class="fa-solid fa-location-dot"></i>
+        <span>Cali, Colombia</span>
+      </div>
+    </div>
+    <div class="footer-copy">
+      <p>&copy; 2026 ARTNOVUS. Todos los derechos reservados POR MELANIE QUINTERO .</p>
+    </div>
+  </footer>
+
+  <!-- BOTÓN FLOTANTE DE WHATSAPP (Abajo a la derecha en todas las páginas) -->
+  <a href="https://wa.me/573126668958?text=Hola,%20quisiera%20más%20información" class="btn-wapp-flotante" target="_blank" rel="noopener noreferrer" title="Chat de WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- Script JavaScript Externo -->
+  <script src="script.js"></script>
+</body>
+</html>
